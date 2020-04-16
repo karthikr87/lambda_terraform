@@ -53,6 +53,11 @@ resource "aws_iam_policy" "SG_lambda_logging_policy" {
       ],
       "Resource": "arn:aws:logs:*:*:*",
       "Effect": "Allow"
+    },
+    {
+      "Action": "ec2:*",
+      "Effect": "Allow",
+      "Resource": "*"
     }
   ]
 }
